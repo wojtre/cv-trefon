@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/wojtre/cv-trefon#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "scrollreveal": "^3.3.6"
   }
 }
