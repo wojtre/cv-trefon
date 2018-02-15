@@ -45,9 +45,9 @@ section hr {
   background-image: url('../img/img2.jpg');
   min-height: 400px;
 }
-.img3 {
-  background-image: url('../img/img3.jpg');
-  min-height: 400px;
+.stopka {
+  background-color: #000;
+  min-height: 600px;
 }
 
 .ptext {
@@ -71,7 +71,7 @@ section hr {
   border-radius: 50%;
   border-style: solid;
   border-width: 10px;
-  border-color: #fff;
+  border-color: #222;
   width: 60%;
 }
 section {
