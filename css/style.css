@@ -1,10 +1,9 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Poppins;
-  font-c
-
+  margin: 0;
 }
 
 .navbar {
@@ -20,15 +19,14 @@ body, html {
   font-size: 20px;
 }
 
-
 section hr {
   border-color: #666;
   margin-bottom: 30px;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-
-.img1, .img2, .img3, .img4 {
+.img1, .img2 {
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,8 +41,9 @@ section hr {
 
 .img2 {
   background-image: url('../img/img2.jpg');
-  min-height: 400px;
+  min-height: 50%;
 }
+
 .stopka {
   background-color: #000;
   min-height: 600px;
@@ -63,8 +62,25 @@ section hr {
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+
 .ptext p {
   font-size: 25px;
+}
+
+.sub-text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  background-color: #000;
+  opacity: 0.9;
+  padding: 20px;
+  transform: translate(-0%, -50%);
+}
+.sub-text cite {
+  font-size: 18px
 }
 
 .photo img {
@@ -74,15 +90,25 @@ section hr {
   border-color: #222;
   width: 60%;
 }
+
 section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 section h2 {
   text-align: center;
   padding-bottom: 60px;
 }
+
 .dark-section {
   color: #666;
   background-color: #111;
+}
+
+ .fa-star {
+  font-size: : 7em;
+}
+.score {
+  text-align: right;
 }
