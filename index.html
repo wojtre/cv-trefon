@@ -8,15 +8,18 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <script src="node_modules/scrollreveal/dist/scrollreveal.min.js">
+
+  </script>
 </head>
 
-<body>
+<body id="top-body">
 
 
   <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
     <div class="container">
 
-      <a class="navbar-brand" href="#">Resume</a>
+      <a class="navbar-brand" href="#top-body">Resume</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,8 +48,8 @@
 
   <div class="img1">
     <div class="ptext">
-      <h1>Wojciech Trefon</h1>
-      <p>Full Stack Java Developer</p>
+      <h1 class="name-left">Wojciech Trefon</h1>
+      <p class="occupacy-right">Full Stack Java Developer</p>
     </div>
   </div>
   </div>
@@ -56,11 +59,11 @@
     <div class="container">
       <h2>About</h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 about-left">
           <h3>Who I am</h3> Full stack software developer with a good knowledge of back-end. Currently working at Device Insight GmbH in Munich in Internet of Things area. Big fan of sport (skiing, gym, cycling, badminton, climbing), machine learning and modern web development.
         </div>
         <div class="col-md-4 text-center photo"><img src="../img/photo.jpg"></div>
-        <div class="col-md-4">
+        <div class="col-md-4 about-right">
           <h3>Info</h3>
           <p>
             <strong>Name:</strong> Wojciech Trefon
@@ -77,6 +80,9 @@
       </div>
     </div>
   </section>
+  <div class="img3">
+
+  </div>
 
   <section id="experience" class="dark-section ">
     <div class="container">
@@ -287,6 +293,13 @@
         <i class="fa fa-star"></i>
         </span>
      </li>
+     <li><span class="skill">Intellij</span>
+        <span class="score float-right">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        </span>
+     </li>
      <li><span class="skill">Git</span>
         <span class="score float-right">
         <i class="fa fa-star"></i>
@@ -305,6 +318,20 @@
         <div class="col-md-6">
           <ul class="list-unstyled">
    <li><span class="skill">Postman</span>
+      <span class="score float-right">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      </span>
+   </li>
+   <li><span class="skill">Intellij</span>
+      <span class="score float-right">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      </span>
+   </li>
+   <li><span class="skill">Intellij</span>
       <span class="score float-right">
       <i class="fa fa-star"></i>
       <i class="fa fa-star"></i>
@@ -363,10 +390,93 @@
     </div>
   </section>
 
-  <div class="stopka">
-  </div>
+  <section id="contact">
+  </section>
+  <footer class=" text-center footer-copy">
+    Wojciech Trefon Copyright &copy; 2018
+  </footer>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+   $(function() {
+     // Smooth Scrolling
+     $('a[href*="#"]:not([href="#"])').click(function() {
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+         var target = $(this.hash);
+         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+         if (target.length) {
+           $('html, body').animate({
+             scrollTop: target.offset().top
+           }, 1000);
+           return false;
+         }
+       }
+     });
+   });
+   </script>
+   <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'top',
+      opacity: 0.7,
+      distance: '70px',
+      scale: 1
+    });
+    sr.reveal('.occupacy-right', {
+      duration: 2000,
+      distance: '70px',
+      origin: 'right'
+    });
+    sr.reveal('.name-left', {
+      duration: 2000,
+      distance: '70px',
+      origin: 'left'
+    });
+    sr.reveal('.about-left', {
+      duration: 2000,
+      distance: '70px',
+      origin: 'left',
+      viewFactor:0.2
+    });
+    sr.reveal('.about-right', {
+      duration: 2000,
+      distance: '70px',
+      origin: 'right',
+      viewFactor:0.2
+    });
+    sr.reveal('.photo', {
+      duration: 2000,
+      origin: 'bottom',
+      viewFactor:0.2
+    });
+
+    sr.reveal('#skills hr, #skills h5', {
+      duration: 2000,
+      origin: 'top',
+      distance: '30px',
+      viewFactor:0.2
+    }, 50);
+    sr.reveal('#skills li', {
+      duration: 2000,
+      origin: 'left',
+      distance: '30px',
+      viewFactor:0.2
+    }, 50);
+    sr.reveal('#education .row, #education hr', {
+      duration: 2000,
+      origin: 'top',
+      distance: '70px',
+      viewFactor:0.2
+    }, 50);
+    sr.reveal('#experience .row, #experience hr', {
+      duration: 2000,
+      origin: 'top',
+      distance: '70px',
+      viewFactor:0.2
+    }, 50);
+   </script>
+
 </body>
 
 </html>
