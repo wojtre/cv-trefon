@@ -51,7 +51,26 @@ section hr {
 
 #contact {
   background-color: #060606;
-  min-height: 600px;
+  min-height: 40%;
+  text-align: center;
+}
+
+#contact h2 {
+  padding-bottom: 40px;
+}
+#contact h6 {
+  padding-bottom: 40px;
+}
+
+#contact h6 i{
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+#contact .socials i {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
 }
 
 .ptext {
@@ -106,7 +125,7 @@ section h2 {
   color: #aaa;
 }
 
-section h3, h4, h5 {
+section h3, h4, h5, h6 {
   color: #aaa;
 
 }

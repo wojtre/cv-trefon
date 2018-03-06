@@ -16,7 +16,7 @@
 <body id="top-body">
 
 
-  <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+  <nav class="my-navbar navbar navbar-expand-md navbar-dark  fixed-top">
     <div class="container">
 
       <a class="navbar-brand" href="#top-body">Resume</a>
@@ -391,7 +391,19 @@
   </section>
 
   <section id="contact">
+    <div class="contant-content">
+
+    <h2>Contact</h2>
+    <div class="container">
+    <h6><i class="fa fa-envelope"></i> wojciech.trefon@gmail.com</h6>
+    <div class="socials">
+      <a href="https://github.com/wojtre" target="blank"> <i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/wojciech-trefon-128820121/" target="blank"> <i class="fa fa-linkedin"></i></a>
+    <a href="https://stackoverflow.com/users/9447438/wojciech-trefon" target="blank">  <i class="fa fa-stack-overflow"></i></a>
+    </div>
+  </div>
   </section>
+</div>
   <footer class=" text-center footer-copy">
     Wojciech Trefon Copyright &copy; 2018
   </footer>
@@ -472,6 +484,12 @@
     sr.reveal('#experience .row, #experience hr', {
       duration: 2000,
       origin: 'top',
+      distance: '70px',
+      viewFactor:0.2
+    }, 50);
+    sr.reveal('.contant-content', {
+      duration: 2000,
+      origin: 'bottom',
       distance: '70px',
       viewFactor:0.2
     }, 50);
